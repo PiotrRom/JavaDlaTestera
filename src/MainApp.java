@@ -3,19 +3,33 @@ public class MainApp {
     public static void main(String[] args) {
 
         //liczby całkowite
-        System.out.println(10);
+        byte b;
+        short s;
+        int i;
+        long l;
+
+        int number = 10;
+        System.out.println(number);
 
         //liczby zmiennoprzecinkowe
-        System.out.println(10.5);
+        float f;
+
+        double doubleNumber = 10.5;
+        System.out.println(doubleNumber);
 
         //text
-        System.out.println("text w Javie");
+        String someText = "text w Javie";
+        System.out.println(someText);
 
         //znak
-        System.out.println('a');
+        char someChar = 'a';
+        System.out.println(someChar);
 
         //boolean
-        System.out.println(true);
-        System.out.println(false);
+        boolean trueValue = true;
+        boolean falseValue = false;
+
+        System.out.println(trueValue);
+        System.out.println(falseValue);
     }
 }
