@@ -26,6 +26,13 @@ public class Operatory {
         // && - i
         System.out.println(numOne < numTwo || numOne == 1);
 
+        // Modulo - reszta z dzielenia
+        System.out.println(10 % 3);
 
+        if (10 % 2 == 0) {
+            System.out.println("jest liczbą parzystą");
+        } else {
+            System.out.println("nie jest liczbą parzystą");
+        }
     }
 }
