@@ -6,6 +6,15 @@ public class User {
     int age;
     boolean isAdult;
 
+    User(String firstName, String lastName, String email, int age) {
+
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
+        this.age = age;
+        this.isAdult = isUserAdults();
+    }
+
     void getFullName() {
         System.out.println(firstName + " " + lastName);
     }
