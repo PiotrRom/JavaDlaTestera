@@ -1,3 +1,5 @@
+import model.User;
+
 public class UsageOfClass {
     public static void main(String[] args) {
 

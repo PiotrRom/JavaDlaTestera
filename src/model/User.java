@@ -1,33 +1,35 @@
+package model;
+
 public class User {
 
-    String firstName;
-    String lastName;
-    String email;
-    int age;
-    boolean isAdult;
+    private String firstName;
+    private String lastName;
+    private String email;
+    private int age;
+    private boolean isAdult;
 
-    User(String firstName, String lastName, String email, int age) {
+    public User(String firstName, String lastName, String email, int age) {
 
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
         this.age = age;
-        this.isAdult = isUserAdults();
+        this.isAdult = isUserAdult();
     }
 
-    void getFullName() {
+    public void getFullName() {
         System.out.println(firstName + " " + lastName);
     }
 
-    void getAllInfo() {
+    public void getAllInfo() {
         System.out.println(firstName + " " + lastName + " " + email + " " + age + " " + isAdult);
     }
 
-    int getUserAge() {
+    public int getUserAge() {
         return age;
     }
 
-    boolean isUserAdults() {
+    public boolean isUserAdult() {
         if (age >= 18) {
             return true;
         } else {
@@ -35,15 +37,15 @@ public class User {
         }
     }
 
-    void greetings(String name) {
+    public void greetings(String name) {
         System.out.println("Hi " + name + ". Nice to see you!");
     }
 
-    void greetings(String name, String lastName) {
+    public void greetings(String name, String lastName) {
         System.out.println("Hi " + name + " " + lastName + ". Nice to see you!");
     }
 
-    void howOldAreYou(String name, int age) {
+    public void howOldAreYou(String name, int age) {
         System.out.println("Hi " + name + ". Your age is " + age);
     }
 
